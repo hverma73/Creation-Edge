@@ -1,0 +1,28 @@
+.story-h1 { text-align:left; padding-left: 20%; margin-top: 80px; }
+slide contents p { float: left; width: 540px; display: inline-block; padding: 40px 0 0 60px;}
+slide contents img { float: left;width: 260px; max-width: 80%; }
+
+slidecont { display:block; overflow: hidden; height: 0; padding-bottom: 40%; position: relative; }
+
+slide { display:block; overflow: hidden; width: 0; position: absolute; top: 0; bottom: 0;left: 0; right: 0;  -webkit-transition: width .7s; transition: width .7s; }
+
+slide.active { width: 100%; }
+
+contents { display:block; position:absolute; padding: 40px 10%; height:100%; }
+
+slide contents box { width: 800px; margin: auto; display: block; }
+
+.moveR slide.active { left:auto; right: 0; }
+.moveR slide contents { right: 0; left:auto; }
+.moveR slide.active contents { right:auto; left: 0;}
+
+.moveL slide { left:auto; right: 0; }
+.moveL slide.active { left: 0; right: 0; }
+.moveL slide contents { right:auto; left: 0; }
+.moveL slide.active contents { right: 0; left:auto;}
+
+left, right {padding: 0; cursor: pointer; font-size: 90px; opacity: .2; z-index: 10; position: absolute; top: 150px; -webkit-transition: all .3s; transition: all .3s; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-weight: 400;}
+
+left:hover, right:hover { opacity: .5; } 
+left {left: 2%;}
+right {right: 2%;}
