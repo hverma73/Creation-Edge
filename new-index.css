@@ -321,3 +321,197 @@ body {
   right: 35px;
   }
 }
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a68', endColorstr='#5ac8fb',GradientType=1 );
+}
+
+/*.cardnew {
+  /* Remove this for use */
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(-50%) !important;
+}*/
+
+/*.cardnew {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 260px;
+  border-radius: 2px;
+  background: #FAFAFA;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}*/
+
+.cardnew.active .cardnew-image {
+  background-position: 50% 50%;
+}
+
+.cardnew .cardnew-image h1 {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  color: #FAFAFA;
+  font-weight: 300;
+  
+  transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.cardnew.active .cardnew-image h1 {
+  bottom: 100px;
+}
+
+.cardnew .cardnew-body {
+  position: absolute;
+  display: block;
+  bottom: -210px;
+  left: 0;
+  width: 500px;
+  height: 260px;
+  background: #FAFAFA;
+  padding: 0 15px;
+  box-sizing: border-box;
+  
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.cardnew {
+    display: block;
+    position: relative;
+    width: 310px;
+    height: 213px;
+    border-radius: 2px;
+    background: #FAFAFA;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+.cardnew .cardnew-image {
+    display: block;
+    position: relative;
+    width: 370px;
+    height: 165px;
+    background-image: url(https://4.bp.blogspot.com/-T_k03UFtS8k/U96RDVp8ebI/AAAAAAABF5E/4107zIbo29U/s0/Google+IO+Landscape_HD.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cardnew.active .cardnew-body {
+  bottom: 0;
+}
+
+/*.cardnew .cardnew-body .controls {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}*/
+
+.controls {
+    display: block;
+    width: 62%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.cardnew .cardnew-body .controls a {
+  position: relative;
+  display: block;
+  float: right;
+  height: 50px;
+  width: 50px;
+  color: #737373;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cardnew .cardnew-body .controls a[data-action="drawer"] {
+  float: left;
+}
+
+.cardnew .cardnew-body .controls a[data-action="drawer"] i {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  transition: opacity 0.32s ease, transform 0.32s ease, color 0.22s ease;
+}
+
+.cardnew .cardnew-body .controls a[data-action="drawer"] i.down {
+  opacity: 0;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.cardnew.active .cardnew-body .controls a[data-action="drawer"] i.down {
+  opacity: 1;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.cardnew .cardnew-body .controls a[data-action="drawer"] i.up {
+  opacity: 1;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.cardnew.active .cardnew-body .controls a[data-action="drawer"] i.up {
+  opacity: 0;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.cardnew .cardnew-body .controls a:hover {
+  color: #4183D7;
+}
+
+.cardnew .cardnew-body .controls a[data-action="share"]:hover {
+  color: #4183D7;
+}
+
+.cardnew .cardnew-body .controls a[data-action="bookmark"]:hover {
+  color: #F9BF3B;
+}
+
+.cardnew .cardnew-body .controls a[data-action="favorite"]:hover {
+  color: #D24D57;
+}
+
+.cardnew .cardnew-body h1 {
+  display: block;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #323232;
+  font-size: 20px;
+}
+
+.cardnew .cardnew-body p {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  color: #737373;
+  font-size: 16px;
+  text-align: left;
+  opacity: 0;
+  padding: 40px 0 0 0;
+  font-weight: 400;
+  
+  transition: padding 0.4s cubic-bezier(.25,.8,.25,1), opacity 0.5s cubic-bezier(.25,.8,.25,1);
+  transition-delay: 0.1s;
+}
+
+.cardnew.active .cardnew-body p {
+  opacity: 1;
+  padding: 0;
+}
